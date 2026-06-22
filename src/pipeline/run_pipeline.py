@@ -21,4 +21,7 @@ for script in scripts:
         print(f"\n❌ Pipeline stopped because {script} failed.")
         sys.exit(1)
 
+os.system(
+    "python src/pricing/pricing_engine.py"
+)
 print("\n✅ Entire pipeline executed successfully!")
