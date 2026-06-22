@@ -1,5 +1,6 @@
 import subprocess
 import sys
+import os
 
 scripts = [
     "src/scraper/nykaa_scraper.py",
@@ -23,5 +24,8 @@ for script in scripts:
 
 os.system(
     "python src/pricing/pricing_engine.py"
+)
+os.system(
+    "python src/analysis/recommendation_engine.py"
 )
 print("\n✅ Entire pipeline executed successfully!")
